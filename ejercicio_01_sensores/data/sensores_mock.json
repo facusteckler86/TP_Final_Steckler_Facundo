@@ -1,0 +1,7 @@
+[
+  {"sensor_id": " SENSOR-001 ", "temperatura": "24.5C", "ubicacion": "Planta Norte"},
+  {"sensor_id": "SENSOR-002", "temperatura": " 31.8 °C", "ubicacion": "   "},
+  {"sensor_id": " SENSOR-003", "temperatura": "19.2", "ubicacion": "Planta Sur"},
+  {"sensor_id": "SENSOR-004", "temperatura": "28.4°C", "ubicacion": null},
+  {"sensor_id": " SENSOR-005 ", "temperatura": "22.1°C", "ubicacion": "Planta Este"}
+]
