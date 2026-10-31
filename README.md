@@ -1,4 +1,4 @@
-# TP Final - Programación Python | EcoTech Solutions
+# TP Final - Programación Python | Fundación Santisima Trinidad
 
 ## 👨‍🎓 Alumno
 
