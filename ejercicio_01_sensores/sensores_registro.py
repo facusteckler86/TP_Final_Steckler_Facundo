@@ -1,14 +1,13 @@
 import re
 from typing import Mapping, TypedDict
 
-
 class SensorLimpio(TypedDict):
     sensor_id: str
     temperatura: float
     ubicacion: str
 
-
 def limpiar_registro_sensor(registro_raw: Mapping[str, object]) -> SensorLimpio:
+
     # Punto A: Normaliza un diccionario con datos crudos de un sensor.
 
     sensor_id_raw = registro_raw.get("sensor_id", "")
@@ -58,7 +57,6 @@ def generar_resumen_sensores(
         temp = sensor["temperatura"]
         suma_temperaturas += temp
         
-        # Verificar si supera el umbral de alerta
         if temp > umbral_temperatura:
             lista_sensores_alerta.append(sensor["sensor_id"])
 
@@ -66,7 +64,7 @@ def generar_resumen_sensores(
 
     return lista_sensores_alerta, promedio_temperatura
 
-# Bloque de ejecución y prueba del flujo completo
+# Bloque de ejecución
 
 if __name__ == "__main__":
     # Datos crudos para analizar
