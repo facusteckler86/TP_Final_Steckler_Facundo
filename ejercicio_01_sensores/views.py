@@ -20,7 +20,7 @@ class PanelSensoresView(TemplateView):
         except FileNotFoundError:
             registros_crudos = []
 
-            sensores_limpios: list[dict[str, object]] = cast(
+        sensores_limpios: list[dict[str, object]] = cast(
             list[dict[str, object]],
             [limpiar_registro_sensor(reg) for reg in registros_crudos],
         )

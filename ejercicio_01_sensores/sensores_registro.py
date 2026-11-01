@@ -8,7 +8,7 @@ class SensorLimpio(TypedDict):
 
 def limpiar_registro_sensor(registro_raw: Mapping[str, object]) -> SensorLimpio:
 
-    # Punto A: Normaliza un diccionario con datos crudos de un sensor.
+    # Punto A: Normalizo las lecturas
 
     sensor_id_raw = registro_raw.get("sensor_id", "")
     sensor_id = sensor_id_raw.strip() if isinstance(sensor_id_raw, str) else "SENSOR-UNKNOWN"
@@ -25,7 +25,7 @@ def limpiar_registro_sensor(registro_raw: Mapping[str, object]) -> SensorLimpio:
     else:
         temperatura = 0.0
 
-    # 3. Ubicación con valor por defecto seguro
+    # Ubicacion por defecto
     ubicacion_raw = registro_raw.get("ubicacion")
     if isinstance(ubicacion_raw, str) and ubicacion_raw.strip():
         ubicacion = ubicacion_raw.strip()
