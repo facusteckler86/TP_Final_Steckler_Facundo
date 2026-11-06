@@ -38,14 +38,13 @@ def limpiar_registro_sensor(registro_raw: Mapping[str, object]) -> SensorLimpio:
         "ubicacion": ubicacion
     }
 
+# Punto B: Monitoreo y Mapeo Estadístico.
 
-def generar_resumen_sensores(
+def generar_reporte_consumo(
     lista_sensores_limpios: list[SensorLimpio],
     umbral_temperatura: float,
 ) -> tuple[list[str], float]:
     
-    # Punto B: Monitoreo y Mapeo Estadístico.
-        
     lista_sensores_alerta: list[str] = []
     suma_temperaturas = 0.0
     total_sensores = len(lista_sensores_limpios)
@@ -64,7 +63,7 @@ def generar_resumen_sensores(
 
     return lista_sensores_alerta, promedio_temperatura
 
-# Bloque de ejecución
+# Bloque de ejecución main
 
 if __name__ == "__main__":
     # Datos crudos para analizar
@@ -84,7 +83,7 @@ if __name__ == "__main__":
 
     print("\n--- 2. ANÁLISIS ESTADÍSTICO Y REPORTES ---")
     UMBRAL = 25.0
-    sensores_en_alerta, promedio_global = generar_resumen_sensores(sensores_limpios, UMBRAL)
+    sensores_en_alerta, promedio_global = generar_reporte_consumo(sensores_limpios, UMBRAL)
 
     print(f"Umbral de temperatura configurado: {UMBRAL} °C")
     print(f"Promedio térmico global de la planta: {promedio_global:.2f} °C")

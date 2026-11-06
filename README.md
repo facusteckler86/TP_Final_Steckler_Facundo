@@ -72,6 +72,19 @@ Responsabilidades:
 - Calcular el promedio general de temperatura.
 - Generar un reporte consolidado de monitoreo.
 
+### 🌐 Acceso mediante Navegador
+
+Ruta de acceso:
+
+```text
+IP + /sensor/panel/
+```
+
+Ejemplo:
+
+```text
+http://127.0.0.1:8000/sensor/panel/
+```
 ---
 
 # 🌱 Ejercicio 2 - Modelo de Productos, Excepciones y Persistencia
