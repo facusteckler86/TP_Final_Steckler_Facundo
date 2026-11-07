@@ -153,6 +153,15 @@ Funcionalidades:
 catalogo_ecotech.json
 ```
 
+
+
+```Comando de terminal: 
+python .\ejercicio_02_productos\productos.py
+```
+
+
+![Imagen del panel](assets/img/img_ejercicio_02.jpg)
+
 ---
 
 # ✅ Ejercicio 3 - Auditoría con Tests Unitarios e Integración Web
