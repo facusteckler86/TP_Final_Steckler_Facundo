@@ -153,12 +153,12 @@ Funcionalidades:
 catalogo_ecotech.json
 ```
 
+Comando de terminal: 
 
-
-```Comando de terminal: 
+```
 python .\ejercicio_02_productos\productos.py
 ```
-
+Imagen de la terminal con informe del reporte
 
 ![Imagen del panel](assets/img/img_ejercicio_02.jpg)
 
