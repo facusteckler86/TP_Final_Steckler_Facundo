@@ -1,0 +1,24 @@
+[
+    {
+        "id_dispositivo": "GEN-01",
+        "modelo": "Filtro de Agua Sustentable",
+        "stock": 50,
+        "categoria": "DispositivoEcologicoGenerico"
+    },
+    {
+        "id_dispositivo": "PAN-101",
+        "modelo": "SunPower Max 400W",
+        "stock": 15,
+        "categoria": "PanelSolar",
+        "potencia_w": 400,
+        "tipo_celda": "Monocristalino"
+    },
+    {
+        "id_dispositivo": "PAN-102",
+        "modelo": "EcoPanel Lite",
+        "stock": 30,
+        "categoria": "PanelSolar",
+        "potencia_w": 250,
+        "tipo_celda": "Policristalino"
+    }
+]

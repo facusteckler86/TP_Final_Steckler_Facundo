@@ -11,9 +11,9 @@ def limpiar_registro_sensor(registro_raw: Mapping[str, object]) -> SensorLimpio:
     # Punto A: Normalizo las lecturas
 
     sensor_id_raw = registro_raw.get("sensor_id", "")
-    sensor_id = sensor_id_raw.strip() if isinstance(sensor_id_raw, str) else "SENSOR-UNKNOWN"
+    sensor_id = sensor_id_raw.strip() if isinstance(sensor_id_raw, str) else "SENSOR-DESCONOCIDO"
     if not sensor_id:
-        sensor_id = "SENSOR-UNKNOWN"
+        sensor_id = "SENSOR-DESCONOCIDO"
 
     
     temp_raw = registro_raw.get("temperatura", 0.0)
