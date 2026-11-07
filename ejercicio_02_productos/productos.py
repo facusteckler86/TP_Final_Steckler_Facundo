@@ -75,7 +75,7 @@ class GestorInventario:
 
         with open(ruta_archivo, 'r', encoding='utf-8') as f:
             datos = json.load(f)
-
+            # Clase base
         lista_dispositivos: list[DispositivoEcologico] = []
         for item in datos:
             categoria = item.get("categoria")

@@ -163,20 +163,3 @@ python .\ejercicio_02_productos\productos.py
 ![Imagen del panel](assets/img/img_ejercicio_02.jpg)
 
 ---
-
-# ✅ Ejercicio 3 - Auditoría con Tests Unitarios e Integración Web
-
-## Objetivo
-
-Validar el correcto funcionamiento de un algoritmo de cálculo de emisiones de carbono y preparar su integración en una aplicación web desarrollada con Django.
-
-### Función Principal
-
-```python
-calcular_emisiones_carbono(consumo_kwh, factor_emision=0.4)
-```
-
-Funcionalidades:
-
-- Cálculo de emisiones de carbono.
-- Validación de valores de
