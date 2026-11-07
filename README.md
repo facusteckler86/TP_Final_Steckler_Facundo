@@ -85,6 +85,8 @@ Ejemplo:
 ```text
 http://127.0.0.1:8000/sensor/panel/
 ```
+
+![Imagen del panel](assets/img/detalle_project01.jpg)
 ---
 
 # 🌱 Ejercicio 2 - Modelo de Productos, Excepciones y Persistencia
