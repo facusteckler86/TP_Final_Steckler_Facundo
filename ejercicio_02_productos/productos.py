@@ -10,7 +10,7 @@ class DispositivoEcologico:
     def __init__(self, id_dispositivo: str, modelo: str, stock: int) -> None:
         self.id_dispositivo = id_dispositivo
         self.modelo = modelo
-        self.stock = stock  # Invoca al setter para validar
+        self.stock = stock 
 
     @property
     def stock(self) -> int:
@@ -52,7 +52,7 @@ class GestorInventario:
                 "modelo": disp.modelo,
                 "stock": disp.stock
             }
-            # Identificamos atributos específicos si es un Panel Solar por ej
+            # Identifico los atributos específicos por ej si es un Panel Solar
             if isinstance(disp, PanelSolar):
                 item["categoria"] = "PanelSolar"
                 item["potencia_w"] = disp.potencia_w
@@ -121,7 +121,7 @@ if __name__ == "__main__":
         catalogo_productos: list[DispositivoEcologico] = [generico, panel1, panel2]
         archivo_db = os.path.join(os.path.dirname(__file__), "catalogo_ecotech.json")
         
-        # Guardamos en el archivo JSON (creo la DB)
+        # Guardo en el archivo JSON (creo la DB)
         GestorInventario.guardar_catalogo_json(catalogo_productos, archivo_db)
 
         # 3. Lectura del JSON que lo uso como DB
